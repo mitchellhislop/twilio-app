@@ -13,7 +13,7 @@ $testers=array(
 	
 	
 //build this for new posts, tweets, whatever we want	
-for ($i=1, $i <=100, $i++){
+
 foreach ($testers as $number => $name){
 	$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
 	            "POST", array(
@@ -27,6 +27,6 @@ foreach ($testers as $number => $name){
         else
             echo "Sent message to $name";
     }
-}
+
  
 ?>
