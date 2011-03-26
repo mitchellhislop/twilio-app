@@ -7,7 +7,8 @@ $client = new TwilioRestClient($AccountSid, $AuthToken);
 //this will get pulled out of the database of people who have signed up for SMS
 $testers=array(
 	"6124184992" => "Mitchell",
-	"6127203122" => "Justin"
+	"6127203122" => "Justin",
+	"9524846686" => "Lauren"
 	);
 	
 	
