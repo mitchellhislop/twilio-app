@@ -16,9 +16,8 @@ $txt_list=array();
 while ($row=mysql_fetch_assoc($numbers))
 {
 	$txt_list[]=$row['number'];
-	
 }
-$query="select last_checked as from settings";
+$query="select last_checked from settings";
 $checktime=mysql_query($query);
 $checktime=mysql_fetch_assoc($checktime);
 $checktime=time($checktime['last_checked']);
