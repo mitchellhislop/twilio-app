@@ -6,7 +6,8 @@ if(!$dbconnect){
 }
 mysql_select_db('twilio_app');
 
-$new_number=$_POST['phone_number'];
+$new_number=$_POST['phone_number'];	
+$number = ereg_replace("[^0-9]", "", $new_number );
 $dupecheck="select $new_number from numbers where active='1'";
 $result=mysql_query($dupecheck);
 if (mysql_num_rows($result) == 0){
