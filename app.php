@@ -32,7 +32,14 @@ $sendtime=time();
 
 if ($lastposttime < $checktime)
 {
-	
+//get shit to text
+
+//check for blog post (with clicked check)
+
+//check for flash message
+
+
+//send it	
 foreach ($txt_list as $number){
 	$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
 	            "POST", array(
