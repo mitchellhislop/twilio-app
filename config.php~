@@ -1,0 +1,8 @@
+<?
+$AccountSid="AC5fafc309936bdbaed48b7d00149481ef";
+$AuthToken="58194089d691ffeb92ee7cf2add060ad";
+$ApiVersion = "2010-04-01";
+$mysql_user="root";
+$mysql_pass="fcwDBM@st3r";
+$db_name="twilio_app";
+?>

@@ -27,13 +27,10 @@ foreach ($txt_list as $number){
 	            "From" => "612-360-2696",
 	            "Body" => $message
 	        ));
-	/*
 		if($response->IsError)
             echo "Error: {$response->ErrorMessage}";
         else
             echo "Message Sent";
-	*/
+    }
   }
-
-header("Location: http://{$_SERVER['HTTP_HOST']}/wp-admin/?page=twilio_blaster&sent");
 ?>
