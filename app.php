@@ -25,7 +25,7 @@ $checktime=time($checktime['last_checked']);
 
 //build this for new posts, tweets, whatever we want	
 mysql_select_db('fcw_wp_00');
-$query="select max(post_date) as latest_post from wp_posts";
+$query="select max(post_date) as latest_post from wp_posts"; //WHERE type="blast this shit yo"
 $result=mysql_query($query);
 $row=mysql_fetch_assoc($result);
 $latestposttime =time($row['latest_post']);
@@ -33,6 +33,7 @@ $sendtime=time();
 
 if ($lastposttime < $checktime)
 {
+	
 foreach ($txt_list as $number){
 	$response = $client->request("/$ApiVersion/Accounts/$AccountSid/SMS/Messages", 
 	            "POST", array(
